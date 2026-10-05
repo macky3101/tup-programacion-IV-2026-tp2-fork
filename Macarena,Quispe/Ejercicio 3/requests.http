@@ -11,6 +11,17 @@ Content-Type: application/json
   "nombre": "Ana Perez"
 }
 
+### Obtener un alumno
+GET {{baseUrl}}/alumnos/1
+
+### Actualizar un alumno
+PUT {{baseUrl}}/alumnos/1
+Content-Type: application/json
+
+{
+  "nombre": "Ana Perez Actualizada"
+}
+
 ### Listar materias
 GET {{baseUrl}}/materias
 
@@ -20,6 +31,17 @@ Content-Type: application/json
 
 {
   "nombre": "Programacion IV"
+}
+
+### Obtener una materia
+GET {{baseUrl}}/materias/1
+
+### Actualizar una materia
+PUT {{baseUrl}}/materias/1
+Content-Type: application/json
+
+{
+  "nombre": "Programacion IV Actualizada"
 }
 
 ### Listar calificaciones
@@ -50,3 +72,9 @@ Content-Type: application/json
 
 ### Eliminar una calificacion
 DELETE {{baseUrl}}/calificaciones/1
+
+### Eliminar una materia
+DELETE {{baseUrl}}/materias/1
+
+### Eliminar un alumno
+DELETE {{baseUrl}}/alumnos/1
